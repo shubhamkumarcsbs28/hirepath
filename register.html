@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="register.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <title>Register</title>
+</head>
+<body>
+    <div class="navbar">
+        <div class="nav-logo"></div>
+        <div class="nav-items">
+            <div class="nav-home"><a href="index.html" class="home border"><i class="fa-solid fa-house"></i></a></div>
+            <div class="nav-bell"><a href="#" class="bell border"><i class="fa-solid fa-bell"></i></a></div>
+            <div class="nav-events"><a href="#" class="events border"><i class="fa-solid fa-calendar-days"></i></a></div>
+            <div class="nav-profile"><a href="profile.html" class="profile border"><i class="fa-solid fa-user"></i></a></div>
+        </div>
+    </div>
+    <div class="body">
+        <div class="reg-form">
+            <div class="bar">
+                <div class="logo"></div>
+            </div>
+            <p id="dark">Enter Your Details</p>
+            <form>
+                <label>Full Name</label>
+                <input type="text" required>
+                <label>Email ID</label>
+        <input type="email" required>
+
+        <!-- Password -->
+        <label>Password</label>
+        <input type="password" required>
+        <div class="hint">Min 8 characters, number & symbol</div>
+
+        <!-- Confirm Password -->
+        <label>Confirm Password</label>
+        <input type="password" required>
+
+        <!-- Role -->
+<label>Role</label>
+<div class="role-group">
+    <label class="option">
+        <input type="radio" name="role" value="student" checked onclick="toggleRole()">
+        Student
+    </label>
+
+    <label class="option">
+        <input type="radio" name="role" value="admin" onclick="toggleRole()">
+        Admin
+    </label>
+</div>
+
+<!-- Student Fields -->
+<div id="studentFields">
+    <label>Branch</label>
+    <select>
+        <option>Select Branch</option>
+        <option>CSE</option>
+        <option>IT</option>
+        <option>ECE</option>
+        <option>EE</option>
+    </select>
+
+    <label>Year of Study</label>
+    <select>
+        <option>Select Year</option>
+        <option>1st Year</option>
+        <option>2nd Year</option>
+        <option>3rd Year</option>
+        <option>4th Year</option>
+    </select>
+</div>
+<div id="adminFields" class="hidden">
+            <label>College Name</label>
+            <input type="text" placeholder="Enter College Name">
+        </div>
+
+<!-- Checkbox -->
+<label class="checkbox-option">
+    <input type="checkbox">
+    Receive placement updates
+</label>
+
+            
+        <div class="button"><button type="submit" class="button">Create Account</button></div>
+
+        <div class="login-link">
+            Already have an account? <a href="#">Login</a>
+        </div>
+
+    </form>
+</div>
+
+<script>
+function toggleRole() {
+    const role = document.querySelector('input[name="role"]:checked').value;
+
+    document.getElementById("studentFields").style.display =
+        role === "student" ? "block" : "none";
+
+    document.getElementById("adminFields").style.display =
+        role === "admin" ? "block" : "none";
+}
+</script>+
+            </form>
+        </div>
+    </div>
+    <footer class="footer">
+        <p>© 2025 HirePath. Built for students, by students.</p>
+        <p>Contact | About | Privacy Policy</p>
+    </footer>
+</body>
+</html>

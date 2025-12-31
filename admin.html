@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>HirePath | Admin Dashboard</title>
+  <link rel="stylesheet" href="admin.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header>
+        <div class="navbar">
+            <div class="logo"></div>
+            <div class="nav-items">
+                <div class="nav-home"><a href="index.html" class="home border"><i class="fa-solid fa-house" title="Home"></i></a></div>
+                <div class="nav-bell"><a href="#" class="bell border"><i class="fa-solid fa-bell" title="Notifications"></i></a></div>
+                <div class="nav-events"><a href="#" class="events border"><i class="fa-solid fa-calendar-days" title="Events"></i></a></div>
+                <div class="nav-profile"><a href="profile.html" class="profile border"><i class="fa-solid fa-user" title="Profile"></i></a></div>
+            </div>
+        </div>
+    </header>
+
+<div class="admin-container">
+  <aside class="sidebar">
+    <a class="active"><i class="fa fa-chart-line"></i> Dashboard</a>
+    <a><i class="fa fa-building"></i> Companies</a>
+    <a><i class="fa fa-users"></i> Students</a>
+    <a><i class="fa fa-clipboard-check"></i> Applications</a>
+    <a><i class="fa fa-file"></i> Reports</a>
+  </aside>
+
+  <!-- MAIN CONTENT -->
+  <main class="content">
+
+    <!-- STATS -->
+    <section class="stats">
+      <div class="stat-card">Total Students <h3>320</h3></div>
+      <div class="stat-card">Placed <h3>148</h3></div>
+      <div class="stat-card">Active Companies <h3>22</h3></div>
+      <div class="stat-card">Ongoing Drives <h3>6</h3></div>
+    </section>
+
+    <!-- COMPANY MANAGEMENT -->
+    <section class="panel">
+      <h3>Post New Company</h3>
+      <div class="form-grid">
+        <input placeholder="Company Name">
+        <input placeholder="Role">
+        <input placeholder="CTC">
+        <input placeholder="Min CGPA">
+        <select>
+          <option>Internship</option>
+          <option>Placement</option>
+        </select>
+        <button>Add Company</button>
+      </div>
+    </section>
+
+    <!-- STUDENT TABLE -->
+    <section class="panel">
+      <h3>Student Overview</h3>
+      <table>
+        <tr>
+          <th>Name</th>
+          <th>Branch</th>
+          <th>CGPA</th>
+          <th>Status</th>
+        </tr>
+        <tr>
+          <td>Shubham Kumar</td>
+          <td>CSE</td>
+          <td>8.2</td>
+          <td class="placed">Placed</td>
+        </tr>
+        <tr>
+          <td>Aman Verma</td>
+          <td>ECE</td>
+          <td>7.1</td>
+          <td class="pending">Eligible</td>
+        </tr>
+      </table>
+    </section>
+
+    <!-- ACTIVITY -->
+    <section class="panel">
+      <h3>Recent Activity</h3>
+      <p>✔ Infosys drive posted</p>
+      <p>✔ Amazon interview results updated</p>
+    </section>
+
+  </main>
+</div>
+    <footer class="footer">
+        <p>© 2025 HirePath. Built for students, by students.</p>
+        <p>Contact | About | Privacy Policy</p>
+    </footer>
+</body>
+</html>

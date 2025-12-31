@@ -1,0 +1,155 @@
+body{
+  margin:0;
+  font-family: system-ui;
+  background:#f4f6fa;
+}
+.navbar{
+    display: flex;
+    background-color: #4578b1;
+    height: 80px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 50px;
+    width: 150px;
+    background-image: url("hirepath_logo.png");
+    background-size: cover;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row-reverse;
+    position: static;
+}
+.home{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.bell{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.events{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.profile{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.admin-container{
+  display:flex;
+}
+
+.sidebar{
+  width:220px;
+  background: rgb(243, 243, 198);
+  color: black;
+  height:130vh;
+  padding:20px;
+  border-bottom-right-radius: 20px ;
+}
+
+.sidebar h2{
+  margin-bottom:30px;
+}
+
+.sidebar a{
+  display:block;
+  padding:10px;
+  margin:8px 0;
+  cursor:pointer;
+}
+
+.sidebar a:hover, .sidebar .active{
+  background: white;
+  border: 2px solid black;
+  border-radius:8px;
+}
+
+.content{
+  flex:1;
+  padding:20px;
+}
+
+.stats{
+  display:grid;
+  grid-template-columns: repeat(4,1fr);
+  gap:20px;
+}
+
+.stat-card{
+  background: rgb(246, 212, 255);
+  padding:20px;
+  border-radius:15px;
+  text-align:center;
+  font-weight:600;
+}
+.stat-card:hover{
+    transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.panel{
+  background:rgb(193, 255, 234);
+  padding:20px;
+  border-radius:15px;
+  margin-top:20px;
+}
+.panel:hover{
+    border: 2px solid black;
+}
+.form-grid{
+  display:grid;
+  grid-template-columns: repeat(3,1fr);
+  gap:10px;
+}
+.panel button{
+    background-color: black;
+    color: white;
+}
+.panel button:hover{
+    background-color: white;
+    color: black;
+    font-weight: 700;
+    border: 2px solid black;
+}
+input, select, button{
+  padding:10px;
+  border-radius:8px;
+  border:1px solid #ccc;
+}
+
+button{
+  background:#1f3c88;
+  color:white;
+  cursor:pointer;
+}
+
+table{
+  width:100%;
+  border-collapse:collapse;
+}
+
+th, td{
+  padding:10px;
+  border-bottom:1px solid #ddd;
+}
+
+.placed{ color:green; font-weight:700; }
+.pending{ color:orange; font-weight:700; }
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 14px;
+    width: 100vw;
+}

@@ -1,0 +1,176 @@
+*{
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.navbar{
+    display: flex;
+    background-color: #4578b1;
+    height: 80px;
+    width: 100vw;
+    align-items: center;
+    justify-content: space-between;
+}
+.logo{
+    height: 50px;
+    width: 150px;
+    background-image: url("hirepath_logo.png");
+    background-size: cover;
+}
+.nav-items{
+    display: flex;
+    flex-direction: row-reverse;
+    position: static;
+}
+.home{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.bell{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.events{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.profile{
+    color: white;
+    font-size: 30px;
+    margin: 10px;
+}
+.border:hover{
+    border: 1.5px solid white;
+}
+.body{
+    background-color: white;
+}
+.body h1{
+    font-size: 36px;
+    margin: 15px;
+}
+.stu-stats{
+    display: flex;
+    padding: 30px;
+}
+.stu-stats h2{
+    text-align: center;
+}
+.stats{
+    width: 100vw;
+    display: flex;
+    justify-content: space-around;
+}
+.stat-card{
+    height: 120px;
+    width: 270px;
+    border-radius: 20px;
+    background-color: rgb(193, 255, 234);
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+.stat-card h3{
+    font-size: 28px;
+    margin: 10px;
+}
+.stat-card p{
+    font-size: 20px;
+    margin: 7px;
+}
+.stat-card small{
+    font-size: 14px;
+    color: rgb(98, 98, 98);
+}
+.apply-section h3{
+    font-size: 36px;
+    text-align: center;
+}
+.company-grid{
+    display: flex;
+    justify-content: space-around;
+}
+.company-card{
+    width: 270px;
+    height: 180px;
+    border-radius: 20px;
+    text-align: center;
+    background-color: rgb(246, 212, 255);
+}
+.company-card h4{
+    font-size: 18px;
+}
+.company-card p{
+    margin: 3px 0 3px 10px;
+    text-align: left;
+}
+.apply-btn{
+    margin-top: 10px;
+    width: 90%;
+    padding: 5px;
+    background: black;
+    color: white;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.stat-card:hover , .company-card:hover , .column:hover{
+     transform: translateY(-5px);
+    transition: 0.3s ease;
+}
+.column:hover , .company-card:hover{
+    border: 2px solid black;
+}
+.apply-btn:hover{
+    border: 3px solid white;
+}
+.kanban{
+    height: 300px;
+}
+.kanban h3{
+    font-size: 36px;
+    text-align: center;
+}
+.kanban-board{
+    display: flex;
+    justify-content: space-around;
+}
+.column{
+    width: 220px;
+    height: 150px;
+    padding: 10px;
+    border-radius: 20px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: rgb(243, 243, 198);
+}
+.column h4{
+    margin: 10px 0 10px 0;
+}
+.card{
+    margin-top: 10px;
+    width: 100%;
+    padding: 5px;
+    background: rgb(231, 231, 231);
+    color: black;
+    font-size: 16px;
+    font-weight: 700;
+    border: none;
+    border-radius: 15px;
+    cursor: pointer;
+}
+.highlight{ border-left: 5px solid orange; }
+.interview{ border-left: 5px solid blue; }
+.success{ border-left: 5px solid green; }
+.rejected{ border-left: 5px solid red; }
+.footer{
+    background-color: black;
+    color: white;
+    text-align: center;
+    padding: 15px 0 15px 0;
+    font-size: 14px;
+    width: 100vw;
+}
